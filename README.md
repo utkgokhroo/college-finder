@@ -241,4 +241,3 @@ Server state (the college list) is not stored in Zustand — it lives in `lib/mo
 ## License
 
 MIT — free to use, modify, and distribute.
-=======
