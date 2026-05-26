@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CollegeFinder
 
 A frontend-only college discovery platform built with Next.js, React, TypeScript, and Tailwind CSS. Students can search and filter colleges, compare institutions side by side, view detailed profiles with placement statistics and reviews, and save shortlists; all persisted client-side with no backend required.
@@ -243,5 +242,3 @@ Server state (the college list) is not stored in Zustand — it lives in `lib/mo
 
 MIT — free to use, modify, and distribute.
 =======
-# college-finder
->>>>>>> 81229ad3d407210722487f9d90a164ab0cfb7782
