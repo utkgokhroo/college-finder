@@ -1,6 +1,7 @@
+<<<<<<< HEAD
 # CollegeFinder
 
-A frontend-only college discovery platform built with Next.js, React, TypeScript, and Tailwind CSS. Students can search and filter colleges, compare institutions side by side, view detailed profiles with placement statistics and reviews, and save shortlists — all persisted client-side with no backend required.
+A frontend-only college discovery platform built with Next.js, React, TypeScript, and Tailwind CSS. Students can search and filter colleges, compare institutions side by side, view detailed profiles with placement statistics and reviews, and save shortlists; all persisted client-side with no backend required.
 
 ---
 
@@ -23,7 +24,7 @@ A frontend-only college discovery platform built with Next.js, React, TypeScript
 | Layer | Choice | Reason |
 |---|---|---|
 | Framework | Next.js 15 (App Router) | File-based routing, server components, `next/font`, and zero-config deploys on Vercel |
-| Language | TypeScript 5 (strict) | Catches prop shape mismatches and store type errors at build time |
+| Language | TypeScript 5 | Catches prop shape mismatches and store type errors at build time |
 | Styling | Tailwind CSS v4 | Utility-first with CSS custom properties for design tokens; no runtime style overhead |
 | State | Zustand 5 + `persist` middleware | Minimal boilerplate, selector-based subscriptions, and automatic `localStorage` sync |
 | React | React 19 | Concurrent features; no additional router or data-fetching library needed |
@@ -163,34 +164,6 @@ A successful build produces zero TypeScript errors and a fully static-compatible
 
 ---
 
-## Deployment
-
-### Vercel (recommended)
-
-1. Push the repository to GitHub.
-2. Go to [vercel.com](https://vercel.com), import the repository.
-3. Vercel auto-detects Next.js — no configuration needed.
-4. Click **Deploy**.
-
-### Netlify
-
-1. Set the build command to `npm run build`.
-2. Set the publish directory to `.next`.
-3. Install the [Netlify Next.js plugin](https://docs.netlify.com/integrations/frameworks/next-js/overview/) for App Router support.
-
-### Static Export (optional)
-
-If you want a fully static build with no Node.js server:
-
-```ts
-// next.config.ts
-const nextConfig: NextConfig = { output: "export" };
-```
-
-Note: dynamic routes (`/colleges/[id]`) require `generateStaticParams` to be added for full static export support.
-
----
-
 ## Architecture Decisions
 
 **App Router over Pages Router.** Next.js 15's App Router enables React Server Components for static data, co-locates layouts next to their routes, and uses the file-system as the navigation API — keeping the project structure self-documenting.
@@ -269,3 +242,6 @@ Server state (the college list) is not stored in Zustand — it lives in `lib/mo
 ## License
 
 MIT — free to use, modify, and distribute.
+=======
+# college-finder
+>>>>>>> 81229ad3d407210722487f9d90a164ab0cfb7782
