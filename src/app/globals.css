@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy:   #0f172a;
+    --ink:    #1e293b;
+    --slate:  #475569;
+    --mist:   #94a3b8;
+    --cloud:  #e2e8f0;
+    --snow:   #f8fafc;
+    --white:  #ffffff;
+
+    --sapphire: #2563eb;
+    --sapphire-light: #dbeafe;
+    --sapphire-dark:  #1d4ed8;
+
+    --emerald: #059669;
+    --emerald-light: #d1fae5;
+
+    --amber:  #d97706;
+    --amber-light: #fef3c7;
+
+    --rose:   #e11d48;
+    --rose-light: #ffe4e6;
+
+    --radius-sm: 6px;
+    --radius:    10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+
+    --shadow-sm: 0 1px 3px 0 rgb(15 23 42 / 0.06), 0 1px 2px -1px rgb(15 23 42 / 0.06);
+    --shadow:    0 4px 12px -2px rgb(15 23 42 / 0.08), 0 2px 6px -2px rgb(15 23 42 / 0.05);
+    --shadow-lg: 0 20px 40px -8px rgb(15 23 42 / 0.12), 0 8px 16px -4px rgb(15 23 42 / 0.06);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    background-color: var(--snow);
+    color: var(--ink);
+  }
+
+  ::selection {
+    background-color: var(--sapphire-light);
+    color: var(--sapphire-dark);
+  }
+}
